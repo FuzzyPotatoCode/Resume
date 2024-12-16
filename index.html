@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
-
         .section {
             margin-bottom: 40px;
         }
@@ -43,7 +42,6 @@
             padding-bottom: 5px;
             margin-bottom: 20px;
         }
-
 
 
         /* Header with Weather Widget */
@@ -83,8 +81,7 @@
         }
 
 
-
-        
+        /* QR Section */
         .qr-code-header {
             text-align: center;
         }
@@ -109,9 +106,6 @@
             word-break: break-word;
             text-align: center;
         }
-
-
-
 
         
         /* Timeline Styling */
@@ -161,8 +155,6 @@
         }
         
 
-
-
         /* Technical Expertise Section */
         .skills {
             display: flex;
@@ -202,7 +194,6 @@
             background: #1d4a7d;
             transform: scale(1.05);
         }
-
 
 
         /* Carousel */
@@ -288,7 +279,7 @@
             right: 10px;
         }
 
-  
+
 
         /* Endorsement */
         .endorsement {
@@ -310,8 +301,6 @@
             margin-right: 10px;
         }
 
-
-        
         
         /* Links Section */
         .links {
@@ -343,12 +332,11 @@
         /* Weather Widget */
         .weather-widget {
             text-align: center;
-            background: rgba(255, 255, 255, 0.7);  /* Slight transparency */
             padding: 8px 12px;
             font-size: 1em;
             color: #555;
-            min-width: 150px;                      /* Consistent width */
-            margin-top: 20px;
+            min-width: 150px;                   
+            margin-top: 40px;
         }
 
         .weather-widget p {
@@ -357,9 +345,10 @@
         }
 
 
+
         @media print {
         .section {
-            page-break-inside: auto;  /* Prevent page break inside each section */
+            page-break-inside: avoid;  /* Prevent page break inside each section */
             margin-bottom: 50px;       /* Ensure spacing between sections */
         }
 
@@ -374,8 +363,6 @@
         .skills-category {
             page-break-inside: avoid;  /* Keep each skills category on one page */
         }
-
-
     }
 
 
@@ -386,7 +373,7 @@
         <div class="header">
             <div class="header-main">
                 <h1>Carson Fisk</h1>
-                <p>Building a Smarter Future</p>
+                <p><strong>Building a Smarter Future</strong></p>
                 <p>Improvement Analyst | Automation Specialist | Digital Transformation Engineer</p>
             </div>
 
@@ -402,7 +389,9 @@
 
         <div class="section">
             <h3 class="section-title"><i class="fa fa-user"></i> Professional Summary</h3>
-            <p>Improvement Analyst | Automation Specialist | Digital Transformation Engineer with proven expertise in enterprise system development, data transformation, and AI implementation. Demonstrated success in delivering large-scale technical solutions across diverse industries including forestry, aquaculture, and industrial automation.</p>
+            <p>Digital Transformation Engineer with over 8 years of experience in enterprise system development, workflow automation, and AI-driven solutions. Proven track record of architecting and delivering scalable technical innovations across industries such as forestry, aquaculture, and industrial automation.</p>
+            <p>Skilled in integrating automation tools, enterprise platforms, and data management systems to streamline processes, optimise workflows, and drive operational efficiency. Recognised for creative problem-solving, seamless system integration, and a commitment to continuous improvement.</p>
+            <p>Passionate about transforming complex challenges into intuitive, high-impact solutions that drive operational excellence and user engagement.</p>
         </div>
 
         <div class="section">
@@ -410,7 +399,7 @@
             <ul class="timeline">
                 <li>
                     <div class="timeline-content">
-                        <h4>Document Management Engineer</h4>
+                        <h4><strong>Document Management Engineer</strong></h4>
                         <span>2023 - Present | Sustainable Timber Tasmania</span>
                         <p>&#x2022; Led the development and implementation of PaperByte, an enterprise document management system integrating automated workflows and AI capabilities.</p>
                         <p>&#x2022; Developed integration solutions using PowerShell, Python, REST APIs, and SQLite.</p> 
@@ -420,7 +409,7 @@
                 </li>
                 <li>
                     <div class="timeline-content">
-                        <h4>Technical Specialist</h4>
+                        <h4><strong>Technical Specialist</strong></h4>
                         <span>2021 - 2023 | Nautilus Collaboration</span>
                         <p>&#x2022; Led digital transformation for aquaculture farms in Australia and New Zealand.</p>
                         <p>&#x2022; Developed 15+ Power Apps for data collection and automation.</p> 
@@ -429,7 +418,7 @@
                 </li>
                 <li>
                     <div class="timeline-content">
-                        <h4>Process Improvement Officer</h4>
+                        <h4><strong>Process Improvement Officer<strong></h4>
                         <span>2016 - 2021 | Humpty Doo Barramundi</span>
                         <p>&#x2022; Led digital transformation initiatives and system integration projects.</p>
                         <p>&#x2022; Migrated the entire business from local and various cloud storage to Microsoft 365 and SharePoint.</p>
@@ -553,8 +542,6 @@
                 <button class="carousel-button next" onclick="moveSlide(1)"><i class="fa fa-chevron-right"></i></button>
             </div>
         </div>
-        
-
 
 
         <!-- Endorsements -->
@@ -574,11 +561,13 @@
             </div>      
         </div>
 
+
         <!-- References -->
         <div class="section">
             <h3 class="section-title"><i class="fa fa-address-card"></i> References</h3>
             <p>Available upon request.</p>
         </div>
+
 
         <!-- Connect With Me -->
         <div class="section">
@@ -593,7 +582,8 @@
             </div>
         </div>
 
-        <!-- Weatehr API -->
+        
+        <!-- Weather API -->
         <div class="section">
             <h3 class="section-title"></h3>
             <div class="weather-widget" id="weather-widget">
@@ -671,3 +661,4 @@
     </script>
 </body>
 </html>
+
